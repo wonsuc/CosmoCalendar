@@ -2,7 +2,6 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 28
-    buildToolsVersion "25.0.3"
     defaultConfig {
         applicationId "com.applikeysolutions.cosmocalendar"
         minSdkVersion 21
@@ -19,6 +18,5 @@ android {
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile project(path: ':cosmocalendar')
+    implementation project(path: ':cosmocalendar')
 }
